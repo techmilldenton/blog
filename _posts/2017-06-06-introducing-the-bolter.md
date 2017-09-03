@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Bolter: A New Code Workshop by TechMill
+title: "The Bolter: A New Code Workshop by TechMill"
 summary: An introductory post 2
 author: Kyle Taylor
 author_url: https://google.com
