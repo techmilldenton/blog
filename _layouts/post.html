@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="heading heading_post">
+  <h1 class="heading__title">{{ page.title }}</h1>
+
+  <div class="post__metadata">
+    <a href="{{ page.author_url }}" class="metadata__author">
+      {{ page.author }}
+    </a>
+
+    <span class="metadata__date">{{ page.date | date: '%B %d, %Y' }}</span>
+  </div>
+</div>
+
+<article>
+  {{ content }}
+</article>

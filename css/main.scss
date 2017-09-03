@@ -1,0 +1,163 @@
+---
+---
+
+$light-grey: #f0f0f2;
+$grey: darken($light-grey, 10%);
+$white: #fff;
+
+$default-transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+$accent-color: red;
+$font-color: #29292c;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: $font-color;
+}
+
+b {
+  font-weight: 400;
+}
+
+a {
+  color: $accent-color;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent-color, 5%);
+  }
+}
+
+article {
+  margin-top: 4rem;
+}
+
+.container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    padding: 0
+  }
+}
+
+.heading {
+  margin-top: 4rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.heading_post {
+  border-bottom: 1px solid $light-grey;
+}
+
+.heading__title, .heading__subtitle {
+  font-weight: 300;
+}
+
+.heading__title {
+  font-size: 3em;
+}
+
+.heading__subtitle {
+  font-size: 1.2em;
+}
+
+.subscription {
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.subscription__text {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.subscription__email {
+  border: 1px solid $grey;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: .5rem;
+  margin-right: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.subscription__submit {
+  background: $accent-color;
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 0;
+  padding: .5rem 1rem;
+  transition: $default-transition;
+
+  &:hover {
+    background: darken($accent-color, 5%);
+  }
+}
+
+.posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post {
+  border-bottom: 1px solid $light-grey;
+  margin-top: 4em;
+}
+
+.post__title {
+  color: $font-color;
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: $default-transition;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.post__summary {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.post__metadata {
+  margin-bottom: 1.5rem;
+}
+
+.metadata__author {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.metadata__date {
+  font-size: 1rem;
+
+  &::before {
+    content: "-";
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+}
