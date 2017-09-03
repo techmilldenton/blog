@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+
+<div class="heading">
+  <h1 class="heading__title">The Grist</h1>
+  <h2 class="heading__subtitle">
+    Written by
+    <a href="https://techmill.co">TechMill</a>
+  </h2>
+</div>
+
+<form class="subscription">
+  <h1 class="subscription__text">
+    Sign up to receive a weekly recap from <b>The Grist</b>
+  </h1>
+
+  <input type="email" class="subscription__email">
+  <input type="submit" class="subscription__submit" text="Sign Up">
+</form>
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li class="post">
+      <a href="{{ post.url }}" class="post__title">{{ post.title }}</a>
+
+      <h2 class="post__summary">{{ post.summary }}</h2>
+
+      <div class="post__metadata">
+        <a href="{{ post.author_url }}" class="metadata__author">
+          {{ post.author }}
+        </a>
+
+        <span class="metadata__date">{{ post.date | date: '%B %d, %Y' }}</span>
+    </li>
+  {% endfor %}
+</ul>
