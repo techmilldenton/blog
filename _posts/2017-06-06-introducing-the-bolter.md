@@ -1,6 +1,9 @@
 ---
+layout: post
 title: The Bolter: A New Code Workshop by TechMill
+summary: An introductory post 2
 author: Kyle Taylor
+author_url: https://google.com
 ---
 
 Over the past 3 years, TechMill has played the role as a catalyst for our evolving tech and startup community here in Denton. Throughout our time in Denton, we have organized a wide range of events and initiatives, but our goal was always to be iterative, learn from the community, and listen to feedback. After watching the community change and grow, and watching other organizations fill gaps where we couldn’t, I feel like we have finally discovered our purpose.
