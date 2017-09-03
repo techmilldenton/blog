@@ -23,9 +23,9 @@ If you've ever looked into attending a code camp, you probably noticed they're i
 The only catch is, if you sign up for our first cohort, we need your feedback. This is a critical component in evaluating the course material, the speed at which the class is taught, and pain points for attendees that can be addressed in the future. After the initial class, we can recoup, evaluate, and eventually produce a polished code camp right here in Denton.
 
 ![test-image](https://techmill.co/wp-content/uploads/2015/10/28134057675_e0d6f09d23_k-1024x576.jpg){:class="img-responsive"}
-"One of our volunteers, Bradford Neumann, teaching a class over User Experience (UX) design."
+_One of our volunteers, Bradford Neumann, teaching a class over User Experience (UX) design._
 
-> “Why would I pay someone to cover material that I can access for free?”
+> Why would I pay someone to cover material that I can access for free?
 
 That’s an obvious question with an easy answer: If you’ve ever looked into learning how to code, you probably have stumbled across hundreds, if not thousands, of free programming resources. You have access to free development environments like [Repl.it], a well-documented knowledge base for open web standards (with examples) from the Mozilla Developer Network ([MDN]), and free code hosting and version control through [Github]. There is absolutely no barrier of entry to information on how to become a great developer without a fee.
 

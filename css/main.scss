@@ -9,6 +9,7 @@ $default-transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
 
 $accent-color: red;
 $font-color: #29292c;
+$background-color: #FFF;
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -32,6 +33,31 @@ a {
 
 article {
   margin-top: 4rem;
+}
+
+blockquote {
+  background: darken($background-color, 5%);
+  font-size: 1.2em;
+  margin-top: 2em;
+  padding: 1rem;
+
+  &::before {
+    color: lighten($accent-color, 35%);
+    content: '"';
+    font-family: cursive;
+    font-size: 6em;
+    margin-left: -0.7em;
+    margin-top: -.6em;
+    opacity: .8;
+    position: absolute;
+  }
+}
+
+.back-button {
+  left: .1em;
+  font-size: 3em;
+  position: fixed;
+  top: .1em;
 }
 
 .container {
