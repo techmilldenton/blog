@@ -42,10 +42,6 @@ article {
   margin-bottom: 100px;
 }
 
-.img-responsive {
-  width: 100%;
-}
-
 @media screen and (min-width: 1366px) {
   .container {
     padding: 0
@@ -72,6 +68,10 @@ article {
 
 .heading__subtitle {
   font-size: 1.2em;
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 .subscription {
