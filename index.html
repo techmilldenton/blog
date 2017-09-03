@@ -23,7 +23,9 @@ title: Home
 <ul class="posts">
   {% for post in site.posts %}
     <li class="post">
-      <a href="{{ post.url }}" class="post__title">{{ post.title }}</a>
+      <a href="{{ post.url | prepend: site.github.url }}" class="post__title">
+        {{ post.title }}
+      </a>
 
       <h2 class="post__summary">{{ post.summary }}</h2>
 
