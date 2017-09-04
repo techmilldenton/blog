@@ -6,6 +6,7 @@
 @import "container";
 @import "heading";
 @import "image";
+@import "navbar";
 @import "post";
 @import "subscription";
 
@@ -96,11 +97,4 @@ p {
 
 :target {
   outline: none;
-}
-
-.back-button {
-  left: .1em;
-  font-size: 3em;
-  position: fixed;
-  top: .1em;
 }
