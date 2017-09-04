@@ -1,0 +1,25 @@
+.heading {
+  margin-top: 4rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.heading_post {
+  border-bottom: 1px solid $light-grey;
+
+  .heading__title {
+    font-size: 2.5em;
+  }
+}
+
+.heading__title, .heading__subtitle {
+  font-weight: 300;
+}
+
+.heading__title {
+  font-size: 3em;
+}
+
+.heading__subtitle {
+  font-size: 1.2em;
+}

@@ -1,0 +1,45 @@
+.subscription {
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.subscription__text {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.subscription__email {
+  border: 1px solid $grey;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: .5rem;
+  margin-right: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.subscription__submit {
+  background: $accent-color;
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 0;
+  padding: .5rem 1rem;
+  transition: $default-transition;
+
+  &:hover {
+    background: darken($accent-color, 5%);
+  }
+}

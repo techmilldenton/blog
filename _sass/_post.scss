@@ -1,0 +1,45 @@
+.posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post {
+  border-bottom: 1px solid $light-grey;
+  margin-top: 4em;
+}
+
+.post__title {
+  color: $font-color;
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: $default-transition;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.post__summary {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.post__metadata {
+  margin-bottom: 1.5rem;
+}
+
+.metadata__author {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.metadata__date {
+  font-size: 1rem;
+
+  &::before {
+    content: "-";
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+}
