@@ -14,6 +14,8 @@ author_url: https://google.com
 
 [Google](https://google.com)
 
+This is some text that has inline `Code` and stuff.
+
 ```ruby
 def foo
   bar

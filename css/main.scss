@@ -5,6 +5,7 @@
 
 @import "container";
 @import "heading";
+@import "highlight";
 @import "image";
 @import "navbar";
 @import "post";
@@ -78,6 +79,14 @@ blockquote {
   }
 }
 
+code {
+  font-family: "Fira Mono", "Monaco", "Consolas", "Lucida Console", monospace;
+  font-size: .8rem;
+  letter-spacing: -0.3px;
+  padding: 0 3px;
+  white-space: normal;
+}
+
 hr {
   border: none;
   border-top: 1px solid $light-grey;
@@ -93,6 +102,34 @@ li {
 p {
   font-size: 1.1rem;
   line-height: 2rem;
+}
+
+pre {
+  background: $lightest-grey;
+  line-height: 1.35;
+  margin: 2.052rem 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+
+  code {
+    border-radius: 2px;
+    display: block;
+    outline: none;
+    overflow-x: auto;
+    padding: 1rem;
+    white-space: inherit;
+  }
+}
+
+:not(pre) > code {
+  margin-right: 0.05em;
+  margin-left: 0.05em;
+  padding: 5px;
+  background: $lightest-grey;
+  white-space: nowrap;
+  font-size: .9rem;
 }
 
 :target {

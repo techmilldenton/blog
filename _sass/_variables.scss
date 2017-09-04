@@ -1,9 +1,22 @@
+$lightest-grey: #f7f7f7;
 $light-grey: #f0f0f2;
 $grey: darken($light-grey, 10%);
 $white: #fff;
 
-$default-transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
-
 $accent-color: red;
+$background-color: $white;
 $font-color: #29292c;
-$background-color: #FFF;
+
+$highlight-blue: #106fb2;
+$highlight-bright-green: #00ad38;
+$highlight-darker-grey: #3d3e44;
+$highlight-darkest-grey: #29292c;
+$highlight-green: #048a64;
+$highlight-grey: #808080;
+$highlight-light-green: #baeeba;
+$highlight-light-red: #ffc8bd;
+$highlight-lighter-grey: #9b9aa1;
+$highlight-lightest-grey: #b5b5c0;
+$highlight-red: #dc322f;
+
+$default-transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
