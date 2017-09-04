@@ -17,7 +17,7 @@ body {
   color: $font-color;
 }
 
-b {
+b, strong {
   font-weight: 400;
 }
 
@@ -32,8 +32,8 @@ a {
 }
 
 article {
+  counter-reset: footnotes;
   margin-top: 4rem;
-  padding: 0 64px;
 }
 
 blockquote {
@@ -61,6 +61,56 @@ blockquote {
   top: .1em;
 }
 
+p {
+  a {
+    color: $font-color;
+    text-decoration: underline;
+    transition: $default-transition;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+a[rel="footnote"] {
+  counter-increment: footnotes;
+
+  &::after {
+    content: counter(footnotes);
+    font-size: .8rem;
+    vertical-align: super;
+    margin: .1rem;
+  }
+}
+
+a[rel="footnote-return"] {
+  &::after {
+    content: "↵";
+  }
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+li {
+  margin-top: 1.5rem;
+}
+
+:target {
+  outline: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $light-grey;
+  display: block;
+  height: 1px;
+  margin: 4rem 0;
+}
+
 .container {
   max-width: 700px;
   margin-left: auto;
@@ -83,6 +133,10 @@ blockquote {
 
 .heading_post {
   border-bottom: 1px solid $light-grey;
+
+  .heading__title {
+    font-size: 2.5em;
+  }
 }
 
 .heading__title, .heading__subtitle {
@@ -97,8 +151,16 @@ blockquote {
   font-size: 1.2em;
 }
 
-.img-responsive {
+caption {
+  text-align: center;
+  display: block;
   width: 100%;
+  background: red;
+  margin-top: 0 !important;
+}
+
+sup {
+  padding: .2rem;
 }
 
 .subscription {
@@ -191,4 +253,18 @@ blockquote {
     margin-left: .5rem;
     margin-right: .5rem;
   }
+}
+
+.image {
+  margin: 3em 0;
+}
+
+.image__image {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.image__caption {
+  display: block;
+  text-align: center;
 }
