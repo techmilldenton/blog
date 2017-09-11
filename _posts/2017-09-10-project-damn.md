@@ -14,17 +14,14 @@ Further, there is only a single air monitoring station[](#fn-2){: rel="footnote"
 The near-obsession with data-driven decision making that is so crucial to modern business seems to somehow escape more modest civic applications, though a smart implementation of similar models might help drive commercial and political decisions at smaller scales, with mutual benefit.
 Taking queues from modern Software-driven businesses and data-gathering practices, a system which emphasizes things like scalability, modularity, and usability could have a substantial impact on civic health, local business strategies and public policy. This document intends to outline some of those techniques and sketch a structure that maximizes the accessibility of comprehensive, quality data.
 
----
-
+<br />
 # Goals
 ### 1. Offer a single-source-of-truth for collected data which is safe and secure.
 ### 2. Provide guidance for amatuer or DIY groups to add nodes to the network.
 ### 3. Offer real-time statistics for environmental conditions across the Denton area.
 ### 4. Make the data publicly available.
 
----
-
-
+<br />
 # Specifications
 - Particular focus domains should include, but might not be limited to--
 - Cloud-based relational database capable of scaling with zero down-time.
@@ -48,20 +45,19 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
 # Milestones
 These tasks are predominantly asynchronous, and should be able to built more or less concurrently given that data models are agreed upon beforehand.
 
-### - Air Quality API
+### Air Quality API
 A RESTful service that consumes and serves environment data.
 
-### - Persistent Database
+### Persistent Database
 Schema should be built with scalability and dynamism of data models in mind.
 
-### - MVP Hardware Integration
+### MVP Hardware Integration
 A Raspberry Pi (or similar) microcontroller with network connectivity and data transmission enabled.
 
-### - “Better” Hardware Integration
+### “Better” Hardware Integration
 After buy-in from community and/or local businesses, upgrades to hardware, enclosures and sensors can begin rolling out.
 
----
-
+<br />
 # Conclusion
 The project should value the lessons of LEAN[](#fn-3){: rel="footnote" id="ref-3" } software development, and focus on preventing lock-in with particular protocols or architectures. As long as a node can communicate reliable environmental data, the database should be capable of storing that information and retrieving it in a consistent fashion that’s optimized for efficiency and consumability.
 
