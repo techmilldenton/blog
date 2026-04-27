@@ -1,3 +1,39 @@
+# Jekyll
 _site/
 .sass-cache/
 .jekyll-metadata
+.jekyll-cache/
+
+# Ruby / Bundler
+vendor/
+Gemfile.lock
+*.gem
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment
+.env
+.env.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Node (just in case)
+node_modules/

@@ -159,10 +159,9 @@ def clean_wayback_artifacts(soup):
 
 def rewrite_wayback_links(text):
     """Strip Wayback Machine prefix from internal URLs, leaving relative paths."""
-    # https://web.archive.org/web/20190721110345/https://techmill.co/foo/
-    # https://web.archive.org/web/20190721110345im_/https://...  (image modifier)
+    # Covers both https:// and protocol-relative // prefixes, with any modifier (im_, cs_, etc.)
     return re.sub(
-        r"https://web\.archive\.org/web/\d+[a-z_]*/https?://" + re.escape(SITE_DOMAIN),
+        r"(?:https?:)?//web\.archive\.org/web/\d+[a-z_]*/https?://" + re.escape(SITE_DOMAIN),
         "",
         text,
     )
@@ -312,43 +311,98 @@ def extract_page_data(soup, original_url, timestamp):
 # Image downloading
 # ---------------------------------------------------------------------------
 
-def download_image(img_url, session, timestamp):
-    """Download an image from the Wayback Machine and save to media/.
-
-    Returns the local relative path (e.g. /media/image.jpg) or None on error.
-    """
-    # Construct archive image URL
-    if "web.archive.org" not in img_url:
-        img_url = wayback_url(timestamp + "im_", img_url)
-
-    try:
-        data = fetch_url(img_url, session, binary=True)
-    except Exception as e:
-        print(f"    Image download failed: {img_url} — {e}")
+def _img_wayback_url(url, timestamp):
+    """Return a fetchable Wayback Machine URL for an image (uses im_ modifier)."""
+    # Normalize protocol-relative URLs first, before any other check
+    if url.startswith("//"):
+        url = "https:" + url
+    # Already a wayback URL — normalize to im_ so we get the raw image
+    if "web.archive.org" in url:
+        url = re.sub(r"/web/\d+[a-z_]*/", f"/web/{timestamp}im_/", url)
+        return url
+    # Relative path (e.g. /wp-content/uploads/...) — anchor to the original site
+    if url.startswith("/"):
+        url = f"https://{SITE_DOMAIN}{url}"
+    if not url.startswith("http"):
         return None
+    return f"{WAYBACK_BASE}/{timestamp}im_/{url}"
 
-    # Derive filename
-    parsed = urlparse(img_url)
-    original_path = parsed.path.split("/")[-1]
-    name = unquote(original_path) or hashlib.md5(img_url.encode()).hexdigest()
 
-    # Strip any Wayback modifier suffix that crept into the filename
-    name = re.sub(r"^[a-z_]+_/", "", name)
+def _fetch_image(wayback_img_url, session):
+    """Download raw bytes for an image URL, with a light delay.
 
-    ext = Path(name).suffix.lower()
-    if not ext:
-        mime = mimetypes.guess_type(img_url)[0] or "image/jpeg"
-        ext = "." + mime.split("/")[-1]
+    If the exact-timestamp URL 404s, retries with just the YYYYMMDD prefix so
+    Wayback Machine can redirect to the nearest available capture.
+    """
+    time.sleep(0.4)
+    resp = session.get(wayback_img_url, timeout=20, allow_redirects=True)
+    if resp.status_code == 404:
+        # Broaden timestamp to YYYYMMDD — Wayback will pick the closest snapshot
+        broader = re.sub(r"/web/(\d{8})\d+([a-z_]*)/", r"/web/\1\2/", wayback_img_url)
+        if broader != wayback_img_url:
+            time.sleep(0.4)
+            resp = session.get(broader, timeout=20, allow_redirects=True)
+    resp.raise_for_status()
+    return resp.content, resp.headers.get("content-type", "image/jpeg")
+
+
+def _save_image(raw, content_type, original_url):
+    """Save image bytes to media/ and return the local path (/media/name.ext)."""
+    # Derive a clean filename from the original URL path
+    orig_path = urlparse(original_url).path
+    name = unquote(orig_path.split("/")[-1]) or hashlib.md5(original_url.encode()).hexdigest()
+
+    if not Path(name).suffix:
+        ext = mimetypes.guess_extension(content_type.split(";")[0].strip()) or ".jpg"
+        # mimetypes sometimes returns .jpe instead of .jpg
+        if ext == ".jpe":
+            ext = ".jpg"
         name += ext
 
-    dest = MEDIA_DIR / name
     MEDIA_DIR.mkdir(parents=True, exist_ok=True)
-
+    dest = MEDIA_DIR / name
     if not dest.exists():
-        dest.write_bytes(data)
-        print(f"    Saved image: media/{name}")
-
+        dest.write_bytes(raw)
+        print(f"    Saved: media/{name}")
     return f"/media/{name}"
+
+
+def localize_images(md_body, session, timestamp):
+    """Scan markdown for image URLs, download each one, return updated markdown.
+
+    Works on the already-converted markdown text so all the cleanup that
+    happened during HTML→MD conversion is preserved.  Image URLs at this
+    point are either:
+      - relative:  /wp-content/uploads/foo.jpg   (after rewrite_wayback_links)
+      - absolute:  https://techmill.co/...
+      - external:  https://other.com/...
+    """
+    img_re = re.compile(r'(!\[[^\]]*\]\()(/[^)]+|https?://[^)]+)(\))')
+    seen = {}  # original url → local path (avoids re-downloading the same file)
+
+    def replace(match):
+        prefix, url, suffix = match.group(1), match.group(2), match.group(3)
+        if url.startswith("/media/"):
+            return match.group(0)  # already local
+        if url in seen:
+            return f"{prefix}{seen[url]}{suffix}"
+
+        fetch = _img_wayback_url(url, timestamp)
+        if not fetch:
+            seen[url] = url
+            return match.group(0)
+
+        try:
+            raw, ct = _fetch_image(fetch, session)
+            local = _save_image(raw, ct, url)
+        except Exception as e:
+            print(f"    Image skipped: {url} — {e}")
+            local = url
+
+        seen[url] = local
+        return f"{prefix}{local}{suffix}"
+
+    return img_re.sub(replace, md_body)
 
 
 # ---------------------------------------------------------------------------
@@ -627,22 +681,9 @@ def main():
         data = extract_page_data(soup, original_url, timestamp)
         data["date"] = normalize_date(data.get("date"), timestamp)
 
-        # Optionally download images
+        # Optionally download images and rewrite URLs in the markdown body
         if args.download_media:
-            for img in soup.select("img[src]"):
-                src = img.get("src", "")
-                if not src or "data:" in src:
-                    continue
-                local = download_image(src, session, timestamp)
-                if local:
-                    img["src"] = local
-            # Re-extract body with updated img src values
-            content_el = (
-                soup.find("div", class_=re.compile(r"entry-content|post-content", re.I))
-                or soup.find("article") or soup.find("main")
-            )
-            if content_el:
-                data["body"] = html_to_markdown(str(content_el))
+            data["body"] = localize_images(data["body"], session, timestamp)
 
         # Determine output path
         if is_post:

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "TechMill Workshop Series Update"
+date: 2019-08-22
+tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "developers", "Education", "hackathon", "Meetup", "podcast", "startup weekend", "tampa bay", "techmill", "Workshop"]
+---
+
+[ ![](/wp-content/uploads/2017/02/workshop.jpg) __](</wp-content/uploads/2017/02/workshop.jpg>)
+
+##### Background
+
+Early this year TechMill [announced the TechMill Workshop Series](<https://web.archive.org/web/20190822203448/http://launchdfw.com/2016/01/22/techmill-workshop-series/>), an initiative aimed at increasing the density of people with high-level technology skills in Denton by providing free workshops covering in-demand topics like Drupal, WordPress, Ruby on Rails, Git, JavaScript, Technology in Business, User Experience Design, and iOS app development. TechMill President [Kyle’s](<https://web.archive.org/web/20190822203448/https://twitter.com/kyletaylored>) one sentence description was “you can go to the Forge on any Sunday and learn something technical.”
+
+Now we’re four months in and every organizer and instructor has learned from this experience. I’ve been leading the iOS app development series and I’d like to share what I’ve learned and what we have planned for the TechMill Workshop Series going forward. We’re going to be taking a small break from it, and I’ll get into why in a little bit, but we will definitely be continuing this series in the future. We see what we’ve accomplished so far as a success and also see ways that we can build on what we’ve done to provide even more to our community in the next round.
+
+##### My Experience
+
+The first session in the iOS app building series was on March 13th and since then I’ve led 7 sessions. My plan going into this series was to use the materials from [Stanford’s great Developing iOS 8 Apps with Swift course](<https://web.archive.org/web/20190822203448/https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099>). Since I’d never tried to teach iOS development in this way before I liked the idea of using someone else’s materials and curriculum rather than figuring out for myself what people need to know. I also liked that the videos from the Stanford course are available for free online so anyone that missed a session of our series could watch that video and stay on track.
+
+I greatly enjoyed sharing iOS development with every person that attended the course. All kinds of folk came � we had a 13 year old and his grandfather, two community college instructors, people with past software development experience and others with none. Bringing these technical topics to people who wouldn’t have had access to them is one of my biggest motivations for leading this series so I’ve been thrilled with the diversity I’ve seen. Plus, everyone who came was friendly and thankful for what TechMill is doing with the Workshop Series. Multiple people remarked that there was nothing else like it nearby. Turnout was lower than I’d like but I’d say the people attending the sessions were the biggest success of it. People know things now that they wouldn’t know without the Workshop Series. That’s powerful.
+
+That brings us to the things I want to improve going forward. Turnout is one of those things. Over the 7 sessions I led the average turnout was approximately 5 people. Once school let out and summer started attendance plummeted and the core group that had been attending didn’t anymore. That didn’t work for the way that I’d wanted the series to work because by following Stanford’s course each session built upon all the ones before it. I didn’t, and still don’t, know how to not bore people that have been attending for multiple sessions while still allowing new people to jump in. That’s probably the reason that college courses are structured the way they are � any topic of any complexity will need to have information layered on top of itself over time and that’s what beginners need.
+
+My first lesson from this is that I need to structure the sessions differently. I need to do more bite-size chunks of atomic information. Things that can stand alone. Obviously nothing in this world stands alone as we’ve learned things every day that have built to what we know now, but there is a middle ground. Perhaps we offer both the bite-size chunks as individual topics and a short and intense “getting started” series that catches up beginners. I’m not sure the best way to handle it but I’ll be trying something new once we get started again.
+
+The other lesson from the sporadic attendance is that Sunday afternoons are not the best time for a course that requires building layers of knowledge. They could work for the bite-size lessons but it is too difficult to get regular attendance on Sunday afternoons because too many things come up. As the leader of the class I experienced the same thing when it was a beautiful spring day in Denton � I didn’t want to be stuck inside a library. So I’d like to experiment with different schedules going forward. And that brings us to the most important part of this � the future of the TechMill Workship Series.
+
+##### The Future
+
+As I said before we will definitely be continuing this series in the future. We aren’t taking a break because we’re tired of doing it or because we ran out of material or because we don’t think Denton cares about our efforts. We’re never too tired, the field of technology is never-ending, and we know Denton appreciates what we’re doing. We’re taking a break because we’re waiting for [Stoke](<https://web.archive.org/web/20190822203448/http://stokedenton.com/>) to open. Stoke will be the tech hub of Denton and we believe that is where TechMill and this Workshop Series needs to be. One location where you can find everything tech in Denton. A beautiful space with a great setup for hosting these workshops.
+
+Moving to Stoke has been our intention the entire time we’ve thought about this Workshop Series but unfortunately the timing was a little off and that’s why we’re taking this break. But Stoke is getting really close to being ready and we are getting really excited about the new opportunities for the Denton tech community that it will bring.
+
+We hope you’re excited too and we want you to know more as soon as we do so please follow us on [Twitter](<https://web.archive.org/web/20190822203448/https://twitter.com/TechMillDenton>), [Facebook](<https://web.archive.org/web/20190822203448/https://www.facebook.com/techmilldenton/>), join [our Meetup group](<https://web.archive.org/web/20190822203448/https://www.meetup.com/techmilldenton/>), or [sign up for the newsletter](<.co/>)�(the signup form is in the footer of every page). We can’t wait to see you there soon!
