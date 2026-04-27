@@ -5,7 +5,7 @@ date: 2019-07-21
 permalink: /initiatives/workshop-series/
 ---
 
-![Workshop class / UX](/wp-content/uploads/2015/10/28134057675_e0d6f09d23_k-1200x400.jpg)
+
 
 ## 
 
@@ -37,11 +37,11 @@ The series is open to anyone wanting and willing to learn new technologies or im
 
 By adding categories to classes, we can group workshops into tracks based on interest: front-end development, back-end development, big data, etc - similar to courses you would see being taught at code camps such as The Iron Yard or DevMountain. This is a new initiative for 2017, and we hope you’ll join us in leveling yourself up and growing the pool of local tech talent here in Denton!
 
-![TM Workshop Banner](/wp-content/uploads/2015/02/tm-workshop-banner-710x575.jpg)
+
 
 ## PROJECT RELATED
 
-[ ![LittleDOCC | Open Coffee Club](/wp-content/uploads/2015/02/littledocc-wp-500x350.jpg) Education __ ](</initiatives/littled-open-coffee-club/>)
+[  Education __ ](</initiatives/littled-open-coffee-club/>)
 
 ### [LittleDOCC | Open Coffee Club](</initiatives/littled-open-coffee-club/>)
 
@@ -49,7 +49,7 @@ LittleD Open Coffee Club is a twice monthly moderated chat about the latest in t
 
 [Read more](</initiatives/littled-open-coffee-club/>)
 
-[ ![Workshop Series](/wp-content/uploads/2015/02/tm-workshop-banner-500x350.jpg) Education, Technology __ ](</initiatives/workshop-series/>)
+[  Education, Technology __ ](</initiatives/workshop-series/>)
 
 ### [Workshop Series](</initiatives/workshop-series/>)
 
@@ -57,7 +57,7 @@ With our network of skilled volunteers, we are bridging the gaps between formal 
 
 [Read more](</initiatives/workshop-series/>)
 
-[ ![OpenHack Denton](/wp-content/uploads/2015/02/openhack-500x350.jpg) Education __ ](</initiatives/openhack-denton/>)
+[  Education __ ](</initiatives/openhack-denton/>)
 
 ### [OpenHack Denton](</initiatives/openhack-denton/>)
 

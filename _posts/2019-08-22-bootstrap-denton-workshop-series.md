@@ -5,7 +5,7 @@ date: 2019-08-22
 tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "developers", "Education", "hackathon", "Meetup", "podcast", "startup weekend", "tampa bay", "techmill", "Workshop"]
 ---
 
-[ ![](/wp-content/uploads/2017/02/kyle_new_desk.jpg) __](</wp-content/uploads/2017/02/kyle_new_desk.jpg>)
+[  __](</wp-content/uploads/2017/02/kyle_new_desk.jpg>)
 
 Hey guys, this is Kyle with Techmill. and I was going to write a blog post about this but I got pretty far along and my computer restarted, so I was too frustrated to try and rewrite it so I�ll just try and remember what I said and say most of that so hopefully this will come a little bit more naturally.
 

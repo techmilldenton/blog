@@ -6,7 +6,7 @@ summary: "Events are at the heart of our organization and are used as a tool for
 permalink: /events/
 ---
 
-![kyle_selfie_bootstrap_denton](/wp-content/uploads/2017/02/kyle_selfie_bootstrap_denton-1200x600.jpg)
+
 
 Before TechMill even started, most of us had been organizing events independently from each other for some time. We weren’t organizing them because we were trying to turn a profit or make a sale - we were organizing them because we wanted to find other people just like us. People who were working to start their own company, build their next cool project, or just find someone to sit down, order a drink, and have a conversation with. That’s really the core of what events are for TechMill - a way to find your stride.
 

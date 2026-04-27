@@ -5,7 +5,7 @@ date: 2019-07-21
 tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "developers", "Education", "hackathon", "Meetup", "podcast", "startup weekend", "tampa bay", "techmill", "Workshop"]
 ---
 
-[ ![Banter Bistro in Denton](/wp-content/uploads/2017/02/banter.jpg) __](</wp-content/uploads/2017/02/banter.jpg>)
+[  __](</wp-content/uploads/2017/02/banter.jpg>)
 
 We’ve been humbled by the outpouring of love and support from our North Texas startup�community.
 

@@ -6,7 +6,7 @@ tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "develo
 permalink: /podcast/ep-12-david-brunow-technical-debt/
 ---
 
-[ ![David & Brandy of Shepherd Dog](/wp-content/uploads/2017/03/courthouse.jpeg) __](</wp-content/uploads/2017/03/courthouse.jpeg>)
+[  __](</wp-content/uploads/2017/03/courthouse.jpeg>)
 
 This week on the TechMill Podcast, we interviewed our own co-host, David Brunow, with the help of our good friend from Swash Labs, Josh Berthume.
 

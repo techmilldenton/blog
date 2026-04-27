@@ -5,7 +5,7 @@ date: 2019-08-22
 tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "developers", "Education", "hackathon", "Meetup", "podcast", "startup weekend", "tampa bay", "techmill", "Workshop"]
 ---
 
-[ ![](/wp-content/uploads/2017/02/workshop.jpg) __](</wp-content/uploads/2017/02/workshop.jpg>)
+[  __](</wp-content/uploads/2017/02/workshop.jpg>)
 
 ##### Background
 

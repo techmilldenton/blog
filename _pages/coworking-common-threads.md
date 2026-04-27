@@ -6,7 +6,7 @@ tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "develo
 permalink: /coworking/common-threads/
 ---
 
-[ ![](/wp-content/uploads/2017/02/6499330057_594eb7c078_o.jpg) __](</wp-content/uploads/2017/02/6499330057_594eb7c078_o.jpg>)
+[  __](</wp-content/uploads/2017/02/6499330057_594eb7c078_o.jpg>)
 
 I�m awestruck by the growth, collaboration, and comradery shown by the Denton and wider DFW startup community�lately.
 

@@ -5,7 +5,7 @@ date: 2019-08-22
 tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "developers", "Education", "hackathon", "Meetup", "podcast", "startup weekend", "tampa bay", "techmill", "Workshop"]
 ---
 
-[ ![](/wp-content/uploads/2017/02/kyle_selfie_bootstrap_denton.jpg) __](</wp-content/uploads/2017/02/kyle_selfie_bootstrap_denton.jpg>)
+[  __](</wp-content/uploads/2017/02/kyle_selfie_bootstrap_denton.jpg>)
 
 We just had our awesome annual Bootstrap Denton party last week where we get the entire Denton tech / creative community together to showcase unique organizations in the area to talk about what they’re working on and how we can get involved. This is great for our local community, but we’re also part of a greater community – the entire North Texas region. With this, Denton is featured as one of the major regional communities in the area startup publication, [LaunchDFW](<https://web.archive.org/web/20190822203507/http://launchdfw.com/>). Who has 2 thumbs and is our regional editor? This guy.
 

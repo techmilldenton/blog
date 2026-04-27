@@ -5,7 +5,7 @@ date: 2019-08-22
 tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "developers", "Education", "hackathon", "Meetup", "podcast", "startup weekend", "tampa bay", "techmill", "Workshop"]
 ---
 
-[ ![](/wp-content/uploads/2017/02/bootstrap_denton_banner-min.png) __](</wp-content/uploads/2017/02/bootstrap_denton_banner-min.png>)
+[  __](</wp-content/uploads/2017/02/bootstrap_denton_banner-min.png>)
 
 ### Denton’s tech scene celebrating continued growth on August 18th at Harvest House.
 

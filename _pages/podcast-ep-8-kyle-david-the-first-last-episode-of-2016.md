@@ -6,7 +6,7 @@ tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "develo
 permalink: /podcast/ep-8-kyle-david-the-first-last-episode-of-2016/
 ---
 
-[ ![](/wp-content/uploads/2016/12/explosion-firework-new-year-s-eve-december-31.jpg) __](</wp-content/uploads/2016/12/explosion-firework-new-year-s-eve-december-31.jpg>)
+[  __](</wp-content/uploads/2016/12/explosion-firework-new-year-s-eve-december-31.jpg>)
 
 For the last podcast of the year, we talk about our favorite TechMill and community highlights of the year and what we�re looking forward to in 2017.
 

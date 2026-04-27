@@ -6,7 +6,7 @@ summary: "Get ready for the first issue of TechMill's relaunched newsletter, The
 tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "developers", "Education", "hackathon", "Meetup", "podcast", "startup weekend", "tampa bay", "techmill", "Workshop"]
 ---
 
-[ ![](/wp-content/uploads/2017/05/write_letter_1493778920.jpg) __](</wp-content/uploads/2017/05/write_letter_1493778920.jpg>)
+[  __](</wp-content/uploads/2017/05/write_letter_1493778920.jpg>)
 
 Soon we will be relaunching our newsletter as The Grist. This will be a great way to stay up-to-date on the latest happenings at TechMill. Readers will also have the opportunity to give us feedback.
 

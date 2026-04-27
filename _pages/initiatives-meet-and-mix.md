@@ -5,7 +5,7 @@ date: 2019-04-10
 permalink: /initiatives/meet-and-mix/
 ---
 
-![bootstrap2015bw](/wp-content/uploads/2018/02/bootstrap2015bw-1045x784.jpg)
+
 
 ## Meet & Mix
 

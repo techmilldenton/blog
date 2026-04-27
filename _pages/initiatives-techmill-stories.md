@@ -6,7 +6,7 @@ summary: "Submit your story about how TechMill has improved your life by October
 permalink: /initiatives/techmill-stories/
 ---
 
-![typewriter](/wp-content/uploads/2018/08/typewriter-2147x1440.jpg)
+
 
 ## What's YOUR TechMill Story?
 

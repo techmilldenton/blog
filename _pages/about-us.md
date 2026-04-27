@@ -16,7 +16,7 @@ By going together, we're able to go farther and push boundries that no other gro
 
 Below you can read a little more about each of our team members and what they do in the local tech and startup community.
 
-![Kyle Taylor](/wp-content/uploads/2015/02/kyle_boostrap_denton.jpeg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://facebook.com/kyletaylored>)
   * [__](<https://web.archive.org/web/20190721110230/https://twitter.com/kyletaylored>)
@@ -29,7 +29,7 @@ Below you can read a little more about each of our team members and what they do
 
 __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-protection#22495b4e4756435b4e4d50474662454f434b4e0c414d4f>)
 
-![Dan Minshew](/wp-content/uploads/2017/11/dan_lion_sm.jpg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://twitter.com/newswim>)
   * [__](<https://web.archive.org/web/20190721110230/https://github.com/newswim>)
@@ -40,7 +40,7 @@ __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-p
 
 __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-protection#c3a7a2adaeaaadb0aba6b483a4aea2aaafeda0acae>)
 
-![Danielle Gaither](/wp-content/uploads/2015/02/danielle-square.jpg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://twitter.com/daniellegaither>)
   * [__](<https://web.archive.org/web/20190721110230/https://www.linkedin.com/in/daniellegaither/>)
@@ -53,7 +53,7 @@ __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-p
 
 __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-protection#24404743454d504c4156644349454d480a474b49>)
 
-![Randi Skinner](//web.archive.org/web/20190721110230im_/https://dev-techmill.pantheonsite.io/wp-content/uploads/2015/02/randi-headshots-5_0.jpg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://www.facebook.com/people/Randi-Skinner/23919458>)
   * [__](<https://web.archive.org/web/20190721110230/https://twitter.com/randimskinner>)
@@ -65,7 +65,7 @@ __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-p
 
 __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-protection#ff8d9e919b96928c949691919a8dbf98929e9693d19c9092>)
 
-![Andy Odom](//web.archive.org/web/20190721110230im_/https://dev-techmill.pantheonsite.io/wp-content/uploads/2015/02/mg_9920_small_copy_0.jpg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://twitter.com/AndyOdom7>)
   * [__](<https://web.archive.org/web/20190721110230/https://linkedin.com/in/andyodom>)
@@ -76,7 +76,7 @@ __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-p
 
 __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-protection#ee8f808a97818a8183ae89838f8782c08d8183>)
 
-![Glen Farris](//web.archive.org/web/20190721110230im_/https://dev-techmill.pantheonsite.io/wp-content/uploads/2015/02/glen_0.jpg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://twitter.com/GlenFarris>)
   * [__](<https://web.archive.org/web/20190721110230/https://linkedin.com/in/glen-farris-squibb-b4651aa9>)
@@ -85,7 +85,7 @@ __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-p
 
 ### Glen Farris - Board Member
 
-![Sujey Franco](/wp-content/uploads/2017/11/sujey_franco.jpg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://www.instagram.com/rowdybees/>)
 
@@ -93,7 +93,7 @@ __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-p
 
 ### Sujey Franco - Board Member, Events Coordinator
 
-![Daniel Abasolo](/wp-content/uploads/2015/02/daniel-fly.jpg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://www.linkedin.com/in/daniel-abasolo-6a274023>)
 
@@ -103,7 +103,7 @@ __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-p
 
 __[[email protected]](</web/20190721110230/https://techmill.co/cdn-cgi/l/email-protection#eb8f8a85828e87ab9f8e888386828787c58884>)
 
-![David Brunow](/wp-content/uploads/2015/02/courthouse-focused-on-david.jpeg)
+
 
   * [__](<https://web.archive.org/web/20190721110230/https://twitter.com/davidbrunow>)
   * [__](<https://web.archive.org/web/20190721110230/https://github.com/davidbrunow>)

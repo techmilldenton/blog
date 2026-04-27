@@ -5,7 +5,7 @@ date: 2019-07-21
 permalink: /initiatives/openhack-denton/
 ---
 
-![OpenHack Denton](/wp-content/uploads/2015/02/openhack-header-2-825x465.jpg)
+
 
 ## SUMMARY
 

@@ -6,7 +6,7 @@ tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "develo
 permalink: /podcast/ep-13-open-denton-building-smart-cities-on-open-data/
 ---
 
-[ ![](/wp-content/uploads/2017/03/Screen-Shot-2017-03-31-at-3.20.47-PM.png) __](</wp-content/uploads/2017/03/Screen-Shot-2017-03-31-at-3.20.47-PM.png>)
+[  __](</wp-content/uploads/2017/03/Screen-Shot-2017-03-31-at-3.20.47-PM.png>)
 
 After hosting our own event for International Open Data Day (March 4, 2017) with the City of Denton and the University of North Texas Libraries, we brought on some of our expert friends to talk about the role of open data, how we can use it for municipal good, and what a smart city looks like.
 

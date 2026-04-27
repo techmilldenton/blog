@@ -5,7 +5,7 @@ date: 2019-07-21
 permalink: /initiatives/open-denton/
 ---
 
-![Open Data Day 2016](/wp-content/uploads/2017/02/Cc0CvlCUYAEF7p0-800x600.jpg) Open Data Day 2016
+ Open Data Day 2016
 
 ![OpenDenton, a smart city initiative](/media/opendenton-smart-e1488165474661.jpg) OpenDenton, a smart city initiative
 

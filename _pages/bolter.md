@@ -6,7 +6,7 @@ summary: "TechMill is launching a part-time developer workshop called The Bolter
 permalink: /bolter/
 ---
 
-![The Bolter](/wp-content/uploads/2017/05/thebolter-1800x600.jpg)
+
 
 TechMill is launching a part-time developer workshop series called **The Bolter**. The program is guided mentorship through a series of lessons covering the topics of HTML, CSS, and JavaScript.
 
@@ -20,7 +20,7 @@ As an alpha program, we will be covering a lot of material very quickly. Attenda
 
 This program will run every Tuesday and Thursday for 90 minutes from **6:30pm - 8pm, starting July 11th.**
 
-![code-screen](/wp-content/uploads/2017/05/code-screen-710x575.jpeg)
+
 
 ## HTML / CSS
 
@@ -60,7 +60,7 @@ Get started with programming
 
 ## Juli James
 
-![Juli James](/wp-content/uploads/2017/05/juli_james-150x150.jpg)
+
 
 Techmill is an open, supportive, creative community of technical people. Every time I show up for Techmill, this group shows up for me. Whether you have a technical or career question, looking to build a new skill, or need to find another resource, Techmill will help you get to where you want to go in your technical journey. 
 
@@ -72,7 +72,7 @@ Techmill is an open, supportive, creative community of technical people. Every t
 
 ## Dave Sims
 
-![Dave Sims](/wp-content/uploads/2017/05/dave-sims-150x150.png)
+
 
 TechMill has a bullpen of amazing, supportive, and talented developers and technical professionals who have been where you are, and now make a living doing what they love.
 
@@ -84,7 +84,7 @@ CTO - Dave Sims
 
 ## Dan Minshew
 
-![Dan Minshew](/wp-content/uploads/2017/05/danswim-150x150.jpeg)
+
 
 One of them best choices you can make is to learn transferable, technical skills. Techmill provides the camaraderie and support that is invaluable when starting down a new career path.
 
@@ -94,7 +94,7 @@ Developer - Dan Minshew
 
 * * *
 
-![Intro to HTML / CSS](/wp-content/uploads/2017/05/css-100x100.png)
+
 
 #### Intro to HTML / CSS
 
@@ -110,7 +110,7 @@ In this section, you will be introduced to the foundation of the web -- HTML. By
 
 
 
-![git](/wp-content/uploads/2017/05/git-100x100.png)
+
 
 #### Git and Github
 
@@ -126,7 +126,7 @@ Git is part of every modern day developer's tool set, and we're going to walk th
 
 
 
-![Intro to JavaScript](/wp-content/uploads/2017/05/browser-2-100x100.png)
+
 
 #### JavaScript and jQuery
 

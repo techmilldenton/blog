@@ -5,7 +5,7 @@ date: 2017-05-03
 permalink: /initiatives/littled-open-coffee-club/
 ---
 
-![LittleDOCC Meetup](/wp-content/uploads/2015/02/600_449596445-1200x675.jpeg)
+
 
 LittleD Open Coffee Club (aka, LittleDOCC), is a twice monthly moderated chat about the latest in technology, startups, digital lifestyle, and business. We meet every other Tuesday morning from 8am to 9am, hosted at a coffee shop in Denton. In the past it has been hosted at Seven Mile Coffee, Jupiter House, The WhiteHouse, Banter Bistro, and others, but we've settled down into one of our favorite shops in town - West Oak Coffee Bar on the square.
 

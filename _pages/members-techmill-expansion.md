@@ -6,7 +6,7 @@ tags: ["Banter", "Bootstrap Denton", "Community", "Coworking", "Denton", "develo
 permalink: /members/techmill-expansion/
 ---
 
-[ ![](/wp-content/uploads/2014/11/techmill-expand.png) __](</wp-content/uploads/2014/11/techmill-expand.png>)
+[  __](</wp-content/uploads/2014/11/techmill-expand.png>)
 
 Thanks to the passionate support of the Denton startup community, we are excited to announce that TechMill is expanding!
 
