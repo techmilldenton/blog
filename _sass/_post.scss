@@ -1,45 +1,107 @@
-.posts {
-  list-style-type: none;
+// Post list on index
+.post-list {
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.post {
-  border-bottom: 1px solid $light-grey;
-  margin-top: 4em;
+.post-card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e8e8e8;
+
+  &:last-child { border-bottom: none; }
 }
 
-.post__title {
-  color: $font-color;
+.post-card__title {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+
+  a {
+    color: $heading-color;
+    &:hover { color: $primary; }
+  }
+}
+
+.post-card__summary {
+  color: $body-color;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-meta {
+  font-size: 0.82rem;
+  color: #999;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  a { color: $primary; }
+}
+
+// Single post
+.post-header {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-body {
+  max-width: 780px;
+
+  h2, h3, h4 { margin-top: 2rem; }
+  blockquote {
+    border-left: 4px solid $primary;
+    margin: 1.5rem 0;
+    padding: 0.75rem 1.5rem;
+    background: $light-bg;
+    color: $body-color;
+    font-style: italic;
+  }
+  pre, code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+  }
+  pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1.25rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+  code {
+    background: $light-bg;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+  }
+}
+
+// Page layout
+.page-header {
+  padding: 3rem 0 2rem;
+  border-bottom: 3px solid $primary;
+  margin-bottom: 2.5rem;
+}
+
+.page-title {
   font-size: 2rem;
-  font-weight: 400;
-  text-decoration: none;
-  transition: $default-transition;
-
-  &:hover {
-    color: $accent-color;
-  }
 }
 
-.post__summary {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.post__metadata {
-  margin-bottom: 1.5rem;
-}
-
-.metadata__author {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.metadata__date {
-  font-size: 1rem;
-
-  &::before {
-    content: "-";
-    margin-left: .5rem;
-    margin-right: .5rem;
-  }
+.page-body {
+  max-width: 900px;
+  margin: 0 auto;
 }

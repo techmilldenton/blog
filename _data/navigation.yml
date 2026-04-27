@@ -1,0 +1,43 @@
+top:
+  - title: About Us
+    url: /about-us/
+  - title: Slack
+    url: https://slack.techmill.co/
+  - title: Contact
+    url: /contact/
+
+main:
+  - title: Home
+    url: /
+  - title: Events
+    url: /events/
+  - title: Initiatives
+    url: /initiatives/
+    children:
+      - title: Community
+        url: /community/
+      - title: Education
+        url: /education/
+  - title: Blog
+    url: /blog/
+  - title: Podcast
+    url: /podcast/
+  - title: The Bolter
+    url: /bolter/
+
+social:
+  - name: Facebook
+    url: https://facebook.com/techmilldenton
+    icon: fa-facebook-f
+  - name: LinkedIn
+    url: https://linkedin.com/company/techmill-llc
+    icon: fa-linkedin-in
+  - name: Twitter
+    url: https://twitter.com/techmilldenton
+    icon: fa-twitter
+  - name: GitHub
+    url: https://github.com/techmilldenton
+    icon: fa-github
+  - name: Instagram
+    url: https://instagram.com/techmilldenton
+    icon: fa-instagram

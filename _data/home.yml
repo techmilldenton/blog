@@ -1,0 +1,111 @@
+hero:
+  headline: "Code With Friends & Drinks"
+  subheadline: "Join Denton's tech and startup community"
+  button_text: "Join Us"
+  button_url: "https://www.meetup.com/TechmillDenton/"
+  background_image: "/media/openhack-800x600.jpg"
+
+pillars:
+  - title: Education
+    description: "With our network of volunteers, we're teaching skills to students looking to learn industry standards, freelancers wanting to expand their skillset, and business owners integrating new technologies."
+    image: "/media/28134057675_e0d6f09d23_k-495x400.jpg"
+    image_alt: "Workshop class / UX"
+    link: /education/
+    button_text: Read More
+  - title: Community
+    description: "TechMill exists to support and educate our local tech and startup communities, but the key word here is \"community\". We promote inclusivity, diversity, and camaraderie throughout our organization and members."
+    image: "/media/29542204554_bc5e0cb1a0_h-495x400.jpg"
+    image_alt: "Bootstrap Denton Crowd"
+    link: /community/
+    button_text: Read More
+  - title: Events
+    description: "The best way to build community is by providing opportunities for people to meet their peers, learn new skills, and collaborate with each other. At TechMill, our goal is to facilitate a wide range of events for our members to attend and have fun."
+    image: "/media/30170994015_aa65e26b87_h-495x400.jpg"
+    image_alt: "Bootstrap Denton speaking"
+    link: /events/
+    button_text: View Events
+
+initiatives:
+  - title: TechMill Stories
+    category: Education
+    image: "/media/typewriter-800x600.jpg"
+    link: /initiatives/techmill-stories/
+  - title: Meet and Mix
+    category: Education
+    image: "/media/bootstrap2015bw-800x600.jpg"
+    link: /initiatives/meet-and-mix/
+  - title: Open Denton
+    category: Education
+    image: "/media/opendenton-smart-e1488165474661.jpg"
+    link: /initiatives/open-denton/
+  - title: OpenHack Denton
+    category: Education
+    image: "/media/openhack-800x600.jpg"
+    link: /initiatives/openhack-denton/
+  - title: Workshop Series
+    category: Education, Technology
+    image: "/media/tm-workshop-banner-800x600.jpg"
+    link: /initiatives/workshop-series/
+  - title: "LittleDOCC | Open Coffee Club"
+    category: Education
+    image: "/media/littledocc-wp-800x600.jpg"
+    link: /initiatives/littled-open-coffee-club/
+
+what_we_do:
+  - icon: fa-tv
+    title: Educational Workshops
+    description: "Whether you want to learn how to code, run marketing campaigns, or integrate technology into your business — we run a wide range of workshops throughout the year."
+  - icon: fa-calendar
+    title: Regularly Scheduled
+    description: "The key to building community is being consistent. Our calendar features not only unique events, but regular meetups that you can attend weekly and get to know the community."
+  - icon: fa-heart
+    title: Entrepreneur Support
+    description: "Freelancers, small businesses, startups, and entrepreneurs alike — we aim to provide resources and support for all shapes and sizes."
+  - icon: fa-wifi
+    title: Online / Offline
+    description: "It doesn't matter if you prefer to hang out in-person at our meetups, or online in our Slack group — there's always a way to meet your community and collaborate."
+
+join:
+  - title: Virtual
+    description: "Join our community Slack to meet and chat with your fellow local tech enthusiasts."
+    image: "/media/slack-495x400.jpg"
+    image_alt: Slack
+    link: "https://slack.techmill.co/"
+    button_text: "Join our Slack"
+  - title: Meetups
+    description: "Find an upcoming event to see your fellow local tech enthusiasts in person."
+    image: "/media/meetup-495x400.jpg"
+    image_alt: Meetup.com
+    link: "https://www.meetup.com/TechmillDenton"
+    button_text: "Find an event"
+  - title: Membership
+    description: "To celebrate our first year offering memberships, 2017 membership is free if you attend 3 events this year."
+    image: "/media/techmill-member-495x400.jpg"
+    image_alt: TechMill Membership
+    link: /events/
+    button_text: "View Events"
+
+partners:
+  - name: Stoke Denton
+    logo: "/media/stoke.png"
+    url: "https://stokedenton.com/"
+  - name: Kubos
+    logo: "/media/kubos@2x.jpg"
+    url: "http://www.kubos.co/"
+  - name: Pan Ector
+    logo: "/media/panector@2x.jpg"
+    url: "http://www.panector.com/"
+  - name: Women Who Code
+    logo: "/media/womenwhocode@2x.jpg"
+    url: "https://www.womenwhocode.com/dfw"
+
+cta:
+  headline: "Get to know your local tech community and join our Meetup group today!"
+  button_text: "Meetup.com"
+  button_url: "https://www.meetup.com/techmilldenton"
+
+footer:
+  description: "We are a non-profit organization and startup and tech builders in Denton, educating, supporting, and building density of talent in our community."
+  address: "608 E. Hickory #128. Denton, Texas 76205"
+  email: "hello@techmill.co"
+  copyright: "TechMill Copyright 2017"

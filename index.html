@@ -3,38 +3,115 @@ layout: default
 title: Home
 ---
 
-<div class="heading">
-  <h1 class="heading__title">The Grist</h1>
-  <h2 class="heading__subtitle">
-    Written by
-    <a href="https://techmill.co">TechMill</a>
-  </h2>
-</div>
+{% assign home = site.data.home %}
 
-<form class="subscription">
-  <h1 class="subscription__text">
-    Sign up to receive a weekly recap from <b>The Grist</b>
-  </h1>
+<!-- Hero -->
+<section class="hero" style="background-image: url('{{ home.hero.background_image }}');">
+  <div class="hero__content">
+    <h1 class="hero__headline">{{ home.hero.headline }}</h1>
+    <p class="hero__sub">{{ home.hero.subheadline }}</p>
+    <a href="{{ home.hero.button_url }}" class="btn btn-outline btn-lg" target="_blank" rel="noopener">
+      {{ home.hero.button_text }}
+    </a>
+  </div>
+</section>
 
-  <input type="email" class="subscription__email">
-  <input type="submit" class="subscription__submit" text="Sign Up">
-</form>
+<!-- Pillars: Education / Community / Events -->
+<section class="section">
+  <div class="container">
+    <div class="feature-grid">
+      {% for pillar in home.pillars %}
+        <div class="feature-card">
+          <a href="{{ pillar.link }}" class="feature-card__image">
+            <img src="{{ pillar.image }}" alt="{{ pillar.image_alt }}">
+          </a>
+          <h2 class="feature-card__title">{{ pillar.title }}</h2>
+          <p class="feature-card__desc">{{ pillar.description }}</p>
+          <a href="{{ pillar.link }}" class="btn btn-primary">{{ pillar.button_text }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li class="post">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post__title">
-        {{ post.title }}
-      </a>
-
-      <h2 class="post__summary">{{ post.summary }}</h2>
-
-      <div class="post__metadata">
-        <a href="{{ post.author_url }}" class="metadata__author">
-          {{ post.author }}
+<!-- Initiatives grid -->
+<section class="section section-dark" style="padding: 3rem 0;">
+  <div class="container" style="max-width:100%;padding:0;">
+    <div class="initiative-grid">
+      {% for item in home.initiatives %}
+        <a href="{{ item.link }}" class="initiative-item">
+          <img src="{{ item.image }}" alt="{{ item.title }}">
+          <div class="initiative-mask">
+            <p>{{ item.title }}</p>
+            <span>{{ item.category }}</span>
+          </div>
         </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-        <span class="metadata__date">{{ post.date | date: '%B %d, %Y' }}</span>
-    </li>
-  {% endfor %}
-</ul>
+<!-- What TechMill Does -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading"><h2>What TechMill Does</h2></div>
+    <div class="icon-grid">
+      {% for box in home.what_we_do %}
+        <div class="icon-box">
+          <div class="icon-box__icon">
+            <i class="fa-solid {{ box.icon }}"></i>
+          </div>
+          <div class="icon-box__body">
+            <h4>{{ box.title }}</h4>
+            <p>{{ box.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- How to Join -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-heading"><h2>How to Join Us</h2></div>
+    <div class="feature-grid">
+      {% for item in home.join %}
+        <div class="feature-card">
+          <a href="{{ item.link }}" class="feature-card__image">
+            <img src="{{ item.image }}" alt="{{ item.image_alt }}">
+          </a>
+          <h2 class="feature-card__title">{{ item.title }}</h2>
+          <p class="feature-card__desc">{{ item.description }}</p>
+          <a href="{{ item.link }}" class="btn btn-primary">{{ item.button_text }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Partners -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading"><h2>Partners &amp; Supporters</h2></div>
+    <div class="partners-grid">
+      {% for partner in home.partners %}
+        <div class="partner-item">
+          <a href="{{ partner.url }}" target="_blank" rel="noopener">
+            <img src="{{ partner.logo }}" alt="{{ partner.name }}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner" style="background-image: url('/media/techmill-member-495x400.jpg');">
+  <div class="container">
+    <h3>{{ home.cta.headline }}</h3>
+    <a href="{{ home.cta.button_url }}" class="btn btn-outline btn-lg" target="_blank" rel="noopener">
+      {{ home.cta.button_text }}
+    </a>
+  </div>
+</section>

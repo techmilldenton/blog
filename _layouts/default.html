@@ -1,23 +1,136 @@
-<html>
-  <head>
-    <title>{{ page.title }}</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+</head>
+<body>
 
-  <body>
-    <nav class="navbar">
-      <a href="{{ site.baseurl }}/" class="navbar__logo">🎒</a>
+  {% assign nav = site.data.navigation %}
 
-      <div>
-        <a href="{{ site.baseurl }}/" class="navbar__link">All Posts</a>
-        <a href="{{ site.baseurl }}/about/" class="navbar__link">About</a>
-      </div>
-    </nav>
-
+  <!-- Top Bar -->
+  <div class="top-bar">
     <div class="container">
-      {{ content }}
+      <ul class="top-bar__nav">
+        {% for item in nav.top %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <ul class="top-bar__social">
+        {% for s in nav.social %}
+          <li>
+            <a href="{{ s.url }}" target="_blank" rel="noopener" aria-label="{{ s.name }}">
+              <i class="fa-brands {{ s.icon }}"></i>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-  </body>
+  </div>
+
+  <!-- Main Nav -->
+  <nav class="main-nav">
+    <div class="container">
+      <a href="{{ site.baseurl }}/" class="nav-logo">
+        {% if site.logo %}
+          <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}">
+        {% else %}
+          <span class="nav-logo__text">{{ site.title }}</span>
+        {% endif %}
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-menu">
+        {% for item in nav.main %}
+          <li class="nav-menu__item{% if page.url == item.url %} active{% endif %}">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% if item.children %}
+              <ul class="nav-dropdown">
+                {% for child in item.children %}
+                  <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page content -->
+  {{ content }}
+
+  <!-- Footer -->
+  {% assign foot = site.data.home.footer %}
+  {% assign nav_data = site.data.navigation %}
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          {% if site.logo_white %}
+            <img src="{{ site.baseurl }}{{ site.logo_white }}" alt="{{ site.title }}" class="footer-logo">
+          {% else %}
+            <h3 style="color:#fff;margin-bottom:1rem;">{{ site.title }}</h3>
+          {% endif %}
+          <p>{{ foot.description }}</p>
+          <ul class="footer-info">
+            <li><i class="fa-solid fa-location-dot"></i> {{ foot.address }}</li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:{{ foot.email }}">{{ foot.email }}</a></li>
+          </ul>
+          <ul class="footer-social">
+            {% for s in nav_data.social %}
+              <li>
+                <a href="{{ s.url }}" target="_blank" rel="noopener" aria-label="{{ s.name }}">
+                  <i class="fa-brands {{ s.icon }}"></i>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer-heading">Navigate</span>
+          <ul class="footer-nav">
+            {% for item in nav_data.main %}
+              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer-heading">Connect</span>
+          <ul class="footer-nav">
+            {% for item in nav_data.top %}
+              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="subfooter">
+    <div class="container">
+      <p>{{ foot.copyright }}</p>
+      <ul class="subfooter-nav">
+        {% for item in nav_data.top %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</body>
 </html>

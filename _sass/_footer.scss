@@ -1,0 +1,141 @@
+.site-footer {
+  background: $dark;
+  color: rgba(255,255,255,0.75);
+  padding: 3rem 0;
+  border-top: 1px solid $dark-border;
+
+  a {
+    color: rgba(255,255,255,0.75);
+    &:hover { color: $primary; }
+  }
+
+  p { color: rgba(255,255,255,0.75); font-size: 0.9rem; }
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+.footer-logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.footer-info {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.88rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255,255,255,0.65);
+
+    i { color: $primary; margin-top: 3px; flex-shrink: 0; }
+  }
+}
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  gap: 0.5rem;
+
+  a {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.75);
+    transition: $transition;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+}
+
+.footer-heading {
+  color: $white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $primary;
+  display: inline-block;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li { margin-bottom: 0.4rem; }
+
+  a {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.65);
+    &:hover { color: $primary; padding-left: 4px; }
+    transition: $transition;
+  }
+}
+
+// Sub-footer
+.subfooter {
+  background: $primary;
+  padding: 0.9rem 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    color: $heading-color;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+}
+
+.subfooter-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.2rem;
+
+  a {
+    color: $heading-color;
+    font-size: 0.82rem;
+    font-weight: 600;
+    &:hover { color: $white; }
+  }
+}

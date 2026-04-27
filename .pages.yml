@@ -51,3 +51,100 @@ content:
       - name: body
         label: Body
         type: rich-text
+
+  - name: home
+    label: Homepage
+    type: file
+    path: _data/home.yml
+    fields:
+      - name: hero
+        label: Hero Section
+        type: object
+        fields:
+          - { name: headline,         label: Headline,         type: string }
+          - { name: subheadline,      label: Subheadline,      type: string }
+          - { name: button_text,      label: Button Text,      type: string }
+          - { name: button_url,       label: Button URL,       type: string }
+          - { name: background_image, label: Background Image, type: image }
+      - name: pillars
+        label: Pillars (Education/Community/Events)
+        type: list
+        fields:
+          - { name: title,       label: Title,       type: string }
+          - { name: description, label: Description, type: text }
+          - { name: image,       label: Image,       type: image }
+          - { name: image_alt,   label: Alt Text,    type: string }
+          - { name: link,        label: Link,        type: string }
+          - { name: button_text, label: Button Text, type: string }
+      - name: initiatives
+        label: Initiatives Grid
+        type: list
+        fields:
+          - { name: title,    label: Title,    type: string }
+          - { name: category, label: Category, type: string }
+          - { name: image,    label: Image,    type: image }
+          - { name: link,     label: Link,     type: string }
+      - name: what_we_do
+        label: What We Do (Icon Boxes)
+        type: list
+        fields:
+          - { name: icon,        label: "Font Awesome class (e.g. fa-tv)", type: string }
+          - { name: title,       label: Title,       type: string }
+          - { name: description, label: Description, type: text }
+      - name: join
+        label: How to Join (Cards)
+        type: list
+        fields:
+          - { name: title,       label: Title,       type: string }
+          - { name: description, label: Description, type: text }
+          - { name: image,       label: Image,       type: image }
+          - { name: image_alt,   label: Alt Text,    type: string }
+          - { name: link,        label: Link,        type: string }
+          - { name: button_text, label: Button Text, type: string }
+      - name: partners
+        label: Partners & Supporters
+        type: list
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: logo, label: Logo, type: image }
+          - { name: url,  label: URL,  type: string }
+      - name: cta
+        label: CTA Banner
+        type: object
+        fields:
+          - { name: headline,    label: Headline,    type: string }
+          - { name: button_text, label: Button Text, type: string }
+          - { name: button_url,  label: Button URL,  type: string }
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - { name: description, label: Description, type: text }
+          - { name: address,     label: Address,     type: string }
+          - { name: email,       label: Email,       type: string }
+          - { name: copyright,   label: Copyright,   type: string }
+
+  - name: navigation
+    label: Navigation
+    type: file
+    path: _data/navigation.yml
+    fields:
+      - name: top
+        label: Top Bar Links
+        type: list
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: url,   label: URL,   type: string }
+      - name: main
+        label: Main Nav Links
+        type: list
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: url,   label: URL,   type: string }
+      - name: social
+        label: Social Links
+        type: list
+        fields:
+          - { name: name, label: Name,           type: string }
+          - { name: url,  label: URL,            type: string }
+          - { name: icon, label: "FA icon class", type: string }

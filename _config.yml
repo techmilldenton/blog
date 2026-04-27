@@ -26,6 +26,7 @@ defaults:
 # Exclude from build output
 exclude:
   - scripts/
+  - _reference/
   - "*.py"
   - requirements.txt
   - Gemfile
