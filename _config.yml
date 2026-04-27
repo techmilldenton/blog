@@ -1,0 +1,34 @@
+title: TechMill
+description: >-
+  TechMill is a technology-focused community organization based in
+  Denton, Texas.
+url: https://techmill.co
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Front matter defaults
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "", type: pages }
+    values: { layout: page }
+
+# Exclude from build output
+exclude:
+  - scripts/
+  - "*.py"
+  - requirements.txt
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/

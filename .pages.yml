@@ -1,0 +1,53 @@
+# Pages CMS configuration
+# https://pagescms.org/docs/configuration/
+
+media:
+  input: media
+  output: /media
+  categories: [image]
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: _posts
+    filename: "{date}-{fields.slug}"
+    view:
+      fields: [title, date, author]
+    fields:
+      - { name: layout, type: string, hidden: true, default: post }
+      - { name: title,  label: Title,  type: string, required: true }
+      - { name: date,   label: Date,   type: date,   required: true }
+      - { name: author, label: Author, type: string }
+      - { name: summary, label: Summary, type: text }
+      - name: categories
+        label: Categories
+        type: select
+        multiple: true
+        options:
+          values: [community, education, environment, events, news, projects]
+      - name: tags
+        label: Tags
+        type: select
+        multiple: true
+        creatable: true
+        options:
+          values: []
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: pages
+    label: Pages
+    type: collection
+    path: _pages
+    filename: "{fields.slug}"
+    view:
+      fields: [title, permalink]
+    fields:
+      - { name: layout,    type: string, hidden: true, default: page }
+      - { name: title,     label: Title,     type: string, required: true }
+      - { name: permalink, label: Permalink, type: string }
+      - name: body
+        label: Body
+        type: rich-text
